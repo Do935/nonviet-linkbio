@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Nón Việt | Link Bio</title>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f1;
+      color: #304e38;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: calc(100% - 40px);
+      max-width: 900px;
+      margin: 25px auto;
+      padding: 35px 28px;
+      background: #f4f6f1;
+      border-radius: 25px;
+      text-align: center;
+    }
+
+    /* Ảnh đại diện */
+    .avatar {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 25px;
+      padding: 10px;
+      border-radius: 50%;
+      background: white;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #e2e7df;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .description {
+      font-size: 20px;
+      color: #607763;
+      margin-bottom: 25px;
+    }
+
+    /* Danh sách liên kết */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 75px;
+      padding: 15px 55px;
+      background: white;
+      border: 1.5px solid #d4e1d2;
+      border-radius: 17px;
+      color: #304e38;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    /* Logo nền tảng */
+    .app-logo {
+      position: absolute;
+      left: 25px;
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      border-radius: 9px;
+      transition: transform 0.25s ease;
+    }
+
+    .link .right-icon {
+      position: absolute;
+      right: 25px;
+      font-size: 17px;
+    }
+
+    /* Hiệu ứng */
+    .link:hover {
+      background: #e8efe5;
+      color: #304e38;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px #304e3820;
+    }
+
+    .link:hover .app-logo {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 19px;
+      color: #7a8d7c;
+    }
+
+    /* Giao diện điện thoại */
+    @media (max-width: 600px) {
+      .container {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 30px 15px;
+      }
+
+      .avatar {
+        width: 125px;
+        height: 125px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+
+      .link {
+        font-size: 16px;
+        min-height: 65px;
+        padding: 12px 48px;
+      }
+
+      .app-logo {
+        left: 17px;
+        width: 32px;
+        height: 32px;
+      }
+
+      .link .right-icon {
+        right: 17px;
+        font-size: 14px;
+      }
+
+      footer {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Ảnh đại diện Nón Việt -->
+    <div class="avatar">
+      <img src="logo.jpg" alt="Nón Việt">
+    </div>
+
+    <h1>NÓN VIỆT</h1>
+
+    <p class="description">
+      Một chiếc nón nhỏ – Một nét Việt thương
+    </p>
+
+    <div class="links">
+
+      <!-- Shopee -->
+      <a class="link"
+         href="https://shopee.vn/shop/1935057246"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <img class="app-logo"
+             src="shopee.png"
+             alt="Shopee">
+
+        <span>Mua hàng trên Shopee</span>
+
+        <i class="fa-solid fa-arrow-up-right-from-square right-icon"></i>
+      </a>
+
+      <!-- TikTok -->
+      <a class="link"
+         href="https://www.tiktok.com/@nonvietn?_r=1&amp;_t=ZS-9AP7Muo6Lmn"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <img class="app-logo"
+             src="tiktok.png"
+             alt="TikTok">
+
+        <span>TikTok Nón Việt</span>
+
+        <i class="fa-solid fa-arrow-up-right-from-square right-icon"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a class="link"
+         href="https://www.facebook.com/profile.php?id=61594738900629&amp;locale=vi_VN"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <img class="app-logo"
+             src="facebook.png"
+             alt="Facebook">
+
+        <span>Facebook Nón Việt</span>
+
+        <i class="fa-solid fa-arrow-up-right-from-square right-icon"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a class="link"
+         href="https://www.instagram.com/nonviet.88/"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <img class="app-logo"
+             src="instagram.png"
+             alt="Instagram">
+
+        <span>Instagram Nón Việt</span>
+
+        <i class="fa-solid fa-arrow-up-right-from-square right-icon"></i>
+      </a>
+
+      <!-- Zalo -->
+      <a class="link"
+         href="https://zalo.me/0971985348"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <img class="app-logo"
+             src="zalo.png"
+             alt="Zalo">
+
+        <span>Liên hệ Zalo</span>
+
+        <i class="fa-solid fa-arrow-up-right-from-square right-icon"></i>
+      </a>
+
+    </div>
+
+    <footer>
+      Made with love in Vietnam ♡
+    </footer>
+
+  </div>
+</body>
+</html>
